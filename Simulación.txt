@@ -1,0 +1,86 @@
+Responder las siguientes pregunta. Las respuestas deben ser explicaciones
+detalladas.
+
+1) ¿Cómo está compuesta una base de datos?
+
+Una base de datos está compuesta por tablas con datos relacionados.
+
+2) ¿Qué es una tabla?¿Qué puedo encontrar en ella?
+
+Una tabla es un lugar donde se guardan los datos de forma ordenada como gráfico y se pueden encontrar esos datos organizados
+
+3) ¿Cómo se crea una base de datos?
+
+Se crea usando el comando "Create database" y el nombre
+
+4) ¿Qué tipos de datos se pueden utilizar para ingresar nombres y números?
+
+Se puede usar varchar e int
+
+5) ¿Cómo se crea una tabla? ¿Qué siginifica cada parte de la consulta?
+¿El nombre de la tabla debe ser singular o plural?
+
+Se crea con el comando "create table". Se pone el nombre de las tablas que se van a ingresar y el tipo de dato. El nombre debe ser singular
+
+6) ¿Cómo inserto datos en la tabla?
+
+Con el comando "Insert into" y el nombre de la tabla a la que se le quieren ingresar datos, luego los datos
+
+7) ¿Cómo se hace para ver todos los datos que ingresé hasta el momento?
+
+Con el comando "describe" y el nombre de la tabla
+
+8) Dada una tabla de personas con el nombre, el apellido, la edad, la direccion y el dni de cada uno de ellos,
+responder:
+
+
+
+a. ¿Cómo se hace para cambiar el nombre a una persona que se llama 
+Anacleto y tiene como dni el número 14235234? El nuevo nombre deberá ser Favio.
+
+Con "update (el nombre de la tabla) set nombre = "Favio" where dni = "14235234""
+
+b. ¿Cómo se hace para cambiar el nombre a una persona que se llama
+Anacleto y tiene 80 años? El nuevo nombre deberá ser Pablo.
+
+Con "update (el nombre de la tabla) set nombre = "Pablo" where edad = "80""
+
+c. Suponer que se agrega la columna "Direccion" en la tabla personas,
+¿Cómo se hace para cambiar la dirección a todos los integrantes
+de la familia con apellido Equis?
+
+Con "update (nombre de la tabla) set dirección = "(nueva dirección)" where apellido = "Equis"" 
+
+d. Suponer que se agrega la columna "Apellido" en la tabla de personas,
+¿Cómo se hace para eliminar a todos los integrantes de la familia
+Gamboa de la base de datos?
+
+Con "delete from (nombre de la tabla) where apellido = "Bamboa""
+
+e. ¿Cómo se hace para ver los datos de todas las personas mayores de edad
+registradas?
+
+Con "select*from (nombre de la tabla) where edad >= 18
+
+f. ¿Cómo se hace para ver los datos de todas las personas que son 
+mayores de edad y se llamen Roberto?
+
+Con "select*from (nombre de la tabla) where edad >=18 & nombre = "Roberto"
+
+g. ¿Cómo se hace para ver los nombres de la familia Equis?
+
+Con "select*from (nombre de la tabla) nombre where apellido = "Equis"
+
+h. ¿Còmo se hace para ver las edades de la familia Equis?
+
+Con "select*from (nombre de la tabla) edad where apellido = "Equis"
+
+i. ¿Còmo se hace para ver todos los datos de las personas menores de edad
+de la familia Equis?
+
+Con "select*from (nombre de la tabla) where edad < 18 & apellido "Equis"
+
+Extra:
+¿Cómo se agrega una columna en una tabla?
+
+alter table (nombre de la tabla) add (nombre de la nueva columna y tipo de dato)
