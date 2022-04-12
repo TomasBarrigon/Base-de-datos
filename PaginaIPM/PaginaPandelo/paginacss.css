@@ -1,0 +1,46 @@
+body{
+
+    background-color: black;
+}
+
+.Titulo{
+    user-select: none;
+    text-align: center;
+    font-size: 260%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+
+}
+.Materias{
+    user-select: none;
+    margin-left: 3%;
+    font-size: 160%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:blanchedalmond;
+    margin-bottom: 3%;
+}
+
+.Ejercicios{
+    margin-left: 3%;
+    font-size: 113%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+    margin-bottom: 3%;
+}
+hr{
+    color: blanchedalmond;
+}
+nav a{
+    color: blanchedalmond;
+    font-size: 160%;
+}
+nav{
+    display: grid;
+    width: 100vw;
+    height: 10vh;
+
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
